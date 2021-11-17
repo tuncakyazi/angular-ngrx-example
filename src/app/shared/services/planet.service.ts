@@ -4,10 +4,10 @@ import {HttpClient} from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
-export class MoviesService {
+export class PlanetService {
   constructor (private http: HttpClient) {}
 
-  getAll() {
-    return this.http.get('https://swapi.dev/api/1');
+  getPlanet() {
+    return this.http.get('https://swapi.dev/api/planets/1/');
   }
 }
